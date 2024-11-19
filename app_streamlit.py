@@ -64,7 +64,7 @@ if 'data' in locals():
 
         # Visualization in Streamlit
         st.header("Data Drift Report Visualization")
-        st.components.v1.html(report_html, height=1000, width=800, scrolling=True)
+        st.components.v1.html(report_html, height=1000, width=850, scrolling=True)
 
         # Option to download the report
         st.download_button(
