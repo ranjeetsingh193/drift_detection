@@ -50,9 +50,10 @@ if 'data' in locals():
     if st.button("Run Drift Detection"):
         # Run drift detection using Evidently
         report = Report(metrics=[
-            DataDriftPreset(),
+            #DataDriftPreset(),
+            
             # DatasetDriftMetric(),
-            # DataDriftTable()
+            DataDriftTable()
         ])
         
         report.run(reference_data=reference_data, current_data=current_data)
